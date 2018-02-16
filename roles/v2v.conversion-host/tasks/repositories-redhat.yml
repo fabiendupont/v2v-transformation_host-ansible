@@ -17,17 +17,3 @@
       baseurl={{ v2v_repo_srpms_url }}
       enabled=1
       gpgcheck=0
-
-- name: Create the repository file for libguestfs preview
-  copy:
-    dest: /etc/yum.repos.d/libguestfs-preview.repo
-    owner: root
-    group: root
-    mode: 0644
-    content: |
-      [libguestfs-preview]
-      name=libguestfs-preview
-      baseurl=https://people.redhat.com/~rjones/libguestfs-RHEL-7.5-preview/
-      enabled=0
-      gpgcheck=0
-

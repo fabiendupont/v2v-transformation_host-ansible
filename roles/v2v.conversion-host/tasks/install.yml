@@ -31,6 +31,5 @@
 
 - name: Install virt-v2v
   yum:
-    state: latest
+    state: present
     name: virt-v2v
-    enablerepo: libguestfs-preview
