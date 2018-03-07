@@ -25,7 +25,8 @@ Example Playbook
 ```yaml
     - hosts: conversion_hosts
       roles:
-         - { role: v2v.conversion-host, enable: true }
+         - role: v2v.conversion-host
+           role_action: install
 ```
 
 License
