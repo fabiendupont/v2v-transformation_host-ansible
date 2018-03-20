@@ -34,7 +34,7 @@
     state: present
     name: virt-v2v
 
-- name: Remove virt-v2v wrapper
+- name: Add virt-v2v wrapper
   copy:
     src: "virt-v2v-wrapper.py"
     dest: "/usr/bin/"
