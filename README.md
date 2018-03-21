@@ -1,7 +1,9 @@
 # V2V - Transformation Host - Ansible
 This repository contains Ansible artefacts used for V2V Transformation Host
 
-## Example inventory
+## Example inventory file 
+
+inventory.yml
 
 ```yaml
 all:
@@ -15,4 +17,21 @@ all:
   hosts:
     rhvh01.example.com:
     rhvh02.example.com:
+```
+
+## Execute playbook
+
+* Check prerequisites:
+```
+ansible-playbook --inventory-file=inventory.yml transformation_host_check.yml
+```
+
+* Enable conversion capabilities in hosts:
+```
+ansible-playbook --inventory-file=inventory.yml transformation_host_enable.yml
+```
+
+* Disable conversion capabilities in hosts:
+```
+ansible-playbook --inventory-file=inventory.yml transformation_host_disable.yml
 ```
